@@ -1,4 +1,4 @@
-# Ethereum -> Noble -> Dydx
+# Ethereum -> Noble -> Dydx (Python)
 
 - call depositForBurnWithMetadata on Eth Goerli
 - CCTP Relayer mints + forwards this automatically to dydx

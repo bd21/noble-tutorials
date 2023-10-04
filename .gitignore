@@ -1,1 +1,4 @@
 **/private_key*
+**/.env
+**/node_modules
+**/venv
