@@ -16,5 +16,3 @@ Running
 ```
 python3 deposit_for_burn.py
 ```
-
-The Eth Goerli -> Noble CCTP relayer and Noble -> dydx IBC relayers should pick these messages up automatically.
