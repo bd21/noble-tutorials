@@ -35,7 +35,10 @@ const main = async() => {
     );
 
     // Mint recipient 0x7846d5ef33Be01e7386F80A2Ab59cb0Bea7d40Aa, left padded with 0's to 32 bytes
-    const mintRecipient = "0000000000000000000000007846d5ef33Be01e7386F80A2Ab59cb0Bea7d40Aa"
+    const rawMintRecipient = "0x7846d5ef33Be01e7386F80A2Ab59cb0Bea7d40Aa"
+    const cleanedMintRecipient = rawMintRecipient.replace(/^0x/, '')
+    const zeroesNeeded = 64 - cleanedMintRecipient.length;
+    const mintRecipient = '0'.repeat(zeroesNeeded) + cleanedMintRecipient
     const buffer = Buffer.from(mintRecipient, "hex")
     const mintRecipientBytes = new Uint8Array(buffer);
 
@@ -68,7 +71,7 @@ const main = async() => {
     );
 
     console.log("Burned on Noble to to https://testnet.mintscan.io/noble-testnet/tx/" + result.transactionHash)
-    console.log("Minting on Ethereum to https://goerli.etherscan.io/address/" + mintRecipient)
+    console.log("Minting on Ethereum to https://goerli.etherscan.io/address/" + rawMintRecipient)
 
 }
 
