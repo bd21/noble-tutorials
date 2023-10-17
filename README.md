@@ -5,4 +5,4 @@ Tutorials for interacting with the Noble blockchain
 
 02 - (Javascript) Transfer and forward USDC from Ethereum -> Noble -> Dydx
 
-03 - (Javascript) Transfer USDC from Noble -> Ethereum
+03 - (Typescript) Transfer USDC from Noble -> Ethereum
