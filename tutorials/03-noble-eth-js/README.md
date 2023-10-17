@@ -1,4 +1,4 @@
-# Ethereum -> Noble -> Dydx (Javascript)
+# Noble -> Ethereum (Typescript)
 
 Installing
 ```
