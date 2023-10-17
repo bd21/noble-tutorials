@@ -1,0 +1,20 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "CCTP Quickstart",
+  "main": "index.js",
+  "scripts": {
+    "burn": "ts-node index.ts",
+    "codegen": "ts-proto.sh"
+  },
+  "author": "",
+  "dependencies": {
+    "@cosmjs/crypto": "^0.31.1",
+    "@cosmjs/proto-signing": "^0.31.1",
+    "@cosmjs/stargate": "^0.31.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "ts-proto": "^1.162.1"
+  }
+}

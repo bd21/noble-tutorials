@@ -16,7 +16,7 @@ def deposit_for_burn(noble_address, dydx_address):
 
     # initialize account, smart contract
     file = open("private_key")
-    private_key = file.read()
+    private_key = file.read().rstrip('\r\n')
     account = web3.eth.account.from_key(private_key)
     file = open("abi/TokenMessengerWithMetadata.json")
     abi = file.read()
@@ -83,3 +83,10 @@ if __name__ == "__main__":
         noble_address="noble1z8xgywz8v73d7f6ajtsduw6mvmvn5z27at0zp9",
         dydx_address="dydx1kgjgvl3xer7rwskp6tlynmjrd2juas6nqxn8yg"
     )
+    # alternatively, you can derive the noble address
+    # deposit_for_burn(
+    #     dydx_address="dydx1kgjgvl3xer7rwskp6tlynmjrd2juas6nqxn8yg",
+    #     noble_address=bech32.bech32_encode("noble", bech32.bech32_decode("dydx1kgjgvl3xer7rwskp6tlynmjrd2juas6nqxn8yg")[1]),
+    # )
+
+
