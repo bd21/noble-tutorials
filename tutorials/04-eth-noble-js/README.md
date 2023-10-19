@@ -1,4 +1,4 @@
-# Ethereum -> Noble -> Dydx (Javascript)
+# Ethereum -> Noble (Javascript)
 
 Installing
 ```
@@ -16,4 +16,4 @@ Running:
 node index.js
 ```
 
-The Eth Goerli -> Noble testnet CCTP relayer and Noble -> dydx IBC relayers should pick these messages up automatically.
+The Eth Goerli -> Noble testnet CCTP relayer should pick these messages up automatically.
