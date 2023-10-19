@@ -22,7 +22,7 @@ const main = async() => {
     web3.eth.accounts.wallet.add(ethSigner);
 
     // Testnet Contract Addresses
-    const ETH_TOKEN_MESSENGER_CONTRACT_ADDRESS = "0x...";
+    const ETH_TOKEN_MESSENGER_CONTRACT_ADDRESS = "0xd0c3da58f55358142b8d3e06c1c30c5c6114efe8";
     const USDC_ETH_CONTRACT_ADDRESS = "0x07865c6e87b9f70255377e024ace6630c1eaa37f";
 
     // initialize contracts using address and ABI

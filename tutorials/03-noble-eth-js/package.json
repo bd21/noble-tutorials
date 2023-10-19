@@ -12,7 +12,8 @@
     "@cosmjs/crypto": "^0.31.1",
     "@cosmjs/proto-signing": "^0.31.1",
     "@cosmjs/stargate": "^0.31.1",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "ts-node": "10.9.1"
   },
   "devDependencies": {
     "ts-proto": "^1.162.1"
