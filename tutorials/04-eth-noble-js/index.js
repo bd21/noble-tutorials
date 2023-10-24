@@ -41,7 +41,7 @@ const main = async() => {
     mintRecipientBytes.set(mintRecipient, 32 - mintRecipient.length);
     const mintRecipientHex = web3.utils.bytesToHex(mintRecipientBytes)
 
-    // STEP 1: Approve TokenMessengerWithMetadata contract to withdraw from our active eth address
+    // STEP 1: Approve TokenMessenger contract to withdraw from our active eth address
     const approveTxGas = await usdcEthContract.methods.approve(ETH_TOKEN_MESSENGER_CONTRACT_ADDRESS, amount).estimateGas()
     const approveTx = await usdcEthContract.methods.approve(ETH_TOKEN_MESSENGER_CONTRACT_ADDRESS, amount).send({gas: approveTxGas})
     const approveTxReceipt = await waitForTransaction(web3, approveTx.transactionHash);

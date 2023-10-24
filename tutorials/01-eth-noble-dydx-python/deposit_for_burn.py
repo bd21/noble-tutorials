@@ -7,7 +7,6 @@ TOKEN_MESSENGER_WITH_METADATA_CONTRACT_ADDRESS = "0x1ae045d99236365cbdc1855acd2d
 USDC_ERC20_ADDRESS = "0x07865c6e87b9f70255377e024ace6630c1eaa37f"  # goerli
 RPC_URL = ""
 
-
 # requires a local file named 'private_key' with a hex encoded eth private key (no 0x prefix)
 def deposit_for_burn(noble_address, dydx_address):
     # initialize client

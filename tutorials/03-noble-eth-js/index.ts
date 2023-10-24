@@ -24,7 +24,9 @@ const main = async() => {
             prefix: "noble"
         }
     );
+
     const [account] = await wallet.getAccounts();
+
     console.log(account.address)
     const client = await SigningStargateClient.connectWithSigner(
         "https://rpc.testnet.noble.strange.love",
