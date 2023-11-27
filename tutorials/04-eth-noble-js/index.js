@@ -30,12 +30,11 @@ const main = async() => {
     const usdcEthContract = new web3.eth.Contract(usdcAbi, USDC_ETH_CONTRACT_ADDRESS, {from: ethSigner.address});
 
     // Noble destination address
-    const nobleAddress = "noble1dfmfm0ak4yx72ec3qtf49pdyztg0jclgpfntvv"
+    const nobleAddress = "noble1ccsg0q2xrtfpqjfmzk8kaszxx8srexc53h9npf"
     const mintRecipient = bech32.fromWords(bech32.decode(nobleAddress).words)
 
     // Amount that will be transferred
-    const amount = 1;
-    const channel = 20; // dydx
+    const amount = 2;
 
     const mintRecipientBytes = new Uint8Array(32);
     mintRecipientBytes.set(mintRecipient, 32 - mintRecipient.length);
