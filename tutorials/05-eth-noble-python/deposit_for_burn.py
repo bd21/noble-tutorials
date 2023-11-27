@@ -3,10 +3,10 @@ from web3 import Web3
 import bech32
 from pprint import pprint
 
-# eth mainnet
-TOKEN_MESSENGER_CONTRACT_ADDRESS = "0xbd3fa81b58ba92a82136038b25adec7066af3155"
-USDC_ERC20_ADDRESS = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
-RPC_URL = "https://mainnet.infura.io/v3/d33a2875a8e6483da6ce10fe607eba31"  # TODO
+
+TOKEN_MESSENGER_CONTRACT_ADDRESS = ""
+USDC_ERC20_ADDRESS = ""
+RPC_URL = ""
 
 
 # requires a local file named 'private_key' with a hex encoded eth private key (no 0x prefix)
@@ -50,11 +50,13 @@ def deposit_for_burn(noble_address, dydx_address):
     # Send the raw transaction:
     tx_hash = web3.eth.send_raw_transaction(signed_tx.rawTransaction)
     tx_receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
-    print("eth tx hash: https://etherscan.io/tx/" + tx_hash.hex())
+    # print("eth tx hash: https://etherscan.io/tx/" + tx_hash.hex())
+    print("eth tx hash: https://goerli.etherscan.io/tx/" + tx_hash.hex())
     print("eth tx receipt: ")
     pprint(tx_receipt)
 
-    print("Minting to https://testnet.mintscan.io/noble-testnet/account/" + noble_address)
+    # print("Minting to https://testnet.mintscan.io/noble-testnet/account/" + noble_address)
+    print("Minting to https://mintscan.io/noble/account/" + noble_address)
 
 
 # Convert bech32 address to a format suited for CCTP

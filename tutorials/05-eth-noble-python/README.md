@@ -1,7 +1,7 @@
 # Ethereum -> Noble (Python)
 
 - Call depositForBurn on Ethereum mainnet
-- CCTP Relayer mints + forwards this automatically to dydx
+- (background) CCTP Relayer mints to dydx
 
 Installation
 ```
